@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
+// Middleware pro formuláře
+router.use(express.urlencoded({ extended: true }));
+
 router.get("/", (req, res) => {
   res.render("index", { title: "Domů" });
 });
