@@ -2,6 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -19,6 +22,8 @@ nav a {
 
 main {
   padding: 2rem;
+  flex: 1; /* zabere zbylé místo */
+
 }
 
 footer {
@@ -26,4 +31,5 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  text-align: center;
 }
